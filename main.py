@@ -4,7 +4,7 @@ app=Flask(__name__)
 
 @app.route('/')
 def index():
-    return render_template('HAM_main.html')
+    return render_template('HAM.html')
 
 @app.route('/test')
 def test():
@@ -42,7 +42,7 @@ def model_prediction():
     prediction_result_backend=target[result[0]]
 
 
-    return render_template('HAM_main.html', prediction_result=prediction_result_backend)
+    return render_template('HAM.html', prediction_result=prediction_result_backend)
 
 
 if __name__ == "__main__":
