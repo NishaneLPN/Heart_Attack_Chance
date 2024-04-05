@@ -15,7 +15,7 @@ def model_prediction():
     data = request.form 
     print(data)
 
-    model = pickle.load(open(r'C:\Users\LaukikN\Desktop\DS Class\Mini Projects\02-04-24(AWS Implentation)\model1.pkl','rb'))
+    model = pickle.load(open(r'model1.pkl','rb'))
     print(model)
 
     user_data = [[float(data['age']),
